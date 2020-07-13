@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build --build-arg git_hash=$(cat .git/`cat .git/HEAD | cut -d \  -f 2`) -t $IMAGE_NAME .
